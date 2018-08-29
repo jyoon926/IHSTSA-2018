@@ -25,10 +25,12 @@
 			var top2 = $win.scrollTop()/2.5;
 			var top3 = $win.scrollTop()/1.5;
 			var top4 = $win.scrollTop()/2;
+			var top5 = $win.scrollTop()/6;
 			$circle1.css('margin-top', '' + top1 + 'px');
 			$circle2.css('margin-top', '' + top2 + 'px');
 			$circle3.css('margin-top', '' + top3 + 'px');
 			$circle4.css('margin-top', '' + top4 + 'px');
+			$circle5.css('margin-top', '' + top5 + 'px');
 		});
 
 	}
