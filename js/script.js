@@ -48,17 +48,23 @@
 		}
 	});
 
-	/*Change .scrollbutton position on scroll
+	//Change header height on scroll
 	$(window).on("scroll", function () {
 		if ($(this).scrollTop() > 100) {
-	   		$(".scroll").css("bottom", "-50px");
-			$(".scroll2").css("bottom", "-50px");
+	   		$(".header").css("height", "80px");
+	   		$(".h4").css("color", "white");
+	   		$(".header").css("background", "#3F059B");
+			$(".a").css("padding", "30px 52px");
+			$(".a").css("color", "white");
 		}
 		else {
-	   		$(".scroll").css("bottom", "20px");
-			$(".scroll2").css("bottom", "20px");
+	   		$(".header").css("height", "120px");
+	   		$(".h4").css("color", "#3F059B");
+	   		$(".header").css("background", "none");
+			$(".a").css("padding", "52px");
+			$(".a").css("color", "#3F059B");
 		}
 	});
-	*/
+	
 
 });
