@@ -12,22 +12,35 @@
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200, 200i, 300,300i,400,400i,500,500i|IBM+Plex+Sans:200, 300,300i,400,400i,500,500i" rel="stylesheet"-->
 </head>
 <body>
-	<header class="header">
-		<a href="index.html"><img src="img/tsalogo.svg" alt=""></a>
+	<div class="fixed">
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+		<div class="c"></div>
+	</div>
+	<header class="header nav-down">
+		<a href="index.html"><img src="img/tsalogo.svg" class="logo" alt=""></a>
 		<ul class="ul">
-			<a class="a" href="#">Submissions</a><a class="a" href="#">Fundraising</a><a class="a" href="#">Courses</a><a class="a" href="#">Officers</a><a class="a" href="#">Advisors</a><a class="a" href="#">Works Cited</a>
+			<a class="a" href="#">Submissions <div class="dot"></div></a><a class="a" href="#">Fundraising<div class="dot"></div></a><a class="a" href="#">Courses<div class="dot"></div></a><a class="a" href="#">Officers<div class="dot"></div></a><a class="a" href="#">Works Cited<div class="dot"></div></a>
 		</ul>
 	</header>
 	<div class="lander">
 		<div class="circles">
-			<div class="circle3 circle"></div>
 			<div class="circle1 circle"></div>
 			<div class="circle2 circle"></div>
 		</div>
 		<div class="text">
 			<h1>Ithaca High School Technology Student Association</h1>
 			<p>IHS TSA family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to accomplish great tasks. By completing in diverse, challenging, and competitive events, the members of IHS TSA have become extraordinary scientists and engineers.</p>
-			<a class="button" href="#section1">Learn More</a>
+			<a class="button learnmore" href="#section1">Learn More</a>
 		</div>
 	</div>
 	<img src="img/curve.svg" alt="" class="curve">
@@ -35,7 +48,7 @@
 		<div class="column">
 			<h2>About TSA</h2>
 			<p>The Technology Student Association (TSA) is a national, non-profit organization of middle and high school students who are engaged in science, technology, engineering, and mathematics (STEM). Since TSA was chartered in 1978, almost 4,000,000 student members have participated through challenging competitions, leadership opportunities, and community service.</p>
-			<a href="#" class="button">Learn More</a>
+			<a href="http://tsaweb.org/" target="_blank" class="button">Visit the Official TSA Website</a>
 		</div>
 		<div class="column">
 			<p class="large"><b>250,000+</b> Students</p>
@@ -46,19 +59,37 @@
 	</section>
 	<section class="section2" id="section2">
 		<div class="column">
-			<h2>Activities/Fundraising</h2>
+			<h2>Activities and Fundraising</h2>
 			<p>IHSTSA members put in a lot of work to be able to compete in regional and national conferences. However, expenses are high, as well as material costs. Donating to our TSA team helps us send as many of our bright and passionate team members as we can.</p>
-			<a href="#" class="button">Learn More</a>
+			<a href="#" class="button learnmore">Learn More</a>
 		</div>
-		<img src="img/IHS.png" alt="">
+		<img src="img/piggy bank.jpg" alt="">
 	</section>
 	<section class="section3" id="section3">
-		<h2></h2>
-		<p></p>
+		<h2>STEM Education at Ithaca High School</h2>
+		<p>At IHS, we offer a variety of courses to encourage the bright minds of today to pursue fields in technology, engineering, and other stem fields. At IHS we encourage students to choose whatever technology classes they find the most interesting, from Design/Drawing for Production, Computer Integrated Manufacturing, Television Production, and much more.</p>
 		<a href="#" class="button">Learn More</a>
 	</section>
+	<footer>
+		<h1>Contact Us</h1>
+		<form id="contact" action="https://formspree.io/ihstsa@gmail.com" method="POST">
+	    <fieldset>
+			<input class="name" placeholder="Name" type="text" name="Name" tabindex="1" autofocus><p class="errorName error">Invalid</p>
+	    </fieldset>
+	    <fieldset>
+			<input class="email" placeholder="Email Address" name="Email" type="text" tabindex="2"><p class="errorEmail error">Invalid</p>
+	    </fieldset>
+	    <fieldset>
+			<textarea class="message" id="message" name="Message" placeholder="Message" tabindex="5" type="text"></textarea><p class="errorMessage error">Invalid</p>
+	    </fieldset>
+	    <div class="status"></div>
+	    <fieldset>
+			<button type="submit" id="contact-submit" class="submit" data-submit="...Sending">Send</button>
+	    </fieldset>
+	 </form>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
