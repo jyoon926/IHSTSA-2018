@@ -11,7 +11,7 @@
 			$navBar.css('top', '' + top + 'px');
 			console.log(top);
 		});
-		*/
+		
 
 		//Parallax circles
 		var $circle1 = $('.circle1');
@@ -31,7 +31,7 @@
 			$circle3.css('transform', 'translateY(' + top3.toFixed(1) + 'px)');
 			$circle4.css('transform', 'translateY(' + top4.toFixed(1) + 'px)');
 			$circle5.css('transform', 'translateY(' + top5.toFixed(1) + 'px)');
-		});
+		});*/
 
 	}
 
