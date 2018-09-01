@@ -41,7 +41,7 @@ h2 {
 p {
 	font-family: 'Gt Esti Text';
 	font-size: 1.25em;
-	font-weight: 400;
+	font-weight: 200;
 	line-height: 1.8;
 }
 a {
@@ -49,7 +49,7 @@ a {
 	text-decoration: none;
 	list-style: none;
 	font-size: 1.25em;
-	font-weight: 400;
+	font-weight: 200;
 }
 .button {
 	color: white;
@@ -94,6 +94,12 @@ a {
 	align-items: flex-end;
 	justify-content: flex-end;
 	margin-right: var(--gut);
+	z-index: 1;
+	-webkit-transition-duration: 0s !important;
+	   -moz-transition-duration: 0s !important;
+	    -ms-transition-duration: 0s !important;
+	     -o-transition-duration: 0s !important;
+	        transition-duration: 0s !important;
 }
 .lander .circles .circle1 {
 	width: calc( (5 * var(--col)) + (4 * var(--gut)) + 100px );
@@ -103,6 +109,11 @@ a {
 	        border-radius: calc( (((5 * var(--col)) + (4 * var(--gut))) + 100px) / 2 );
 	position: absolute;
 	margin-left: -50px;
+	-webkit-transition-duration: 0s !important;
+	   -moz-transition-duration: 0s !important;
+	    -ms-transition-duration: 0s !important;
+	     -o-transition-duration: 0s !important;
+	        transition-duration: 0s !important;
 }
 .lander .circles .circle2 {
 	width: calc(var(--col) * 2);
@@ -113,6 +124,11 @@ a {
 	position: absolute;
 	margin-left: -20px;
 	margin-top: 50px;
+	-webkit-transition-duration: 0s !important;
+	   -moz-transition-duration: 0s !important;
+	    -ms-transition-duration: 0s !important;
+	     -o-transition-duration: 0s !important;
+	        transition-duration: 0s !important;
 }
 .lander .text {
 	display: -webkit-flex;
@@ -124,7 +140,7 @@ a {
 	-webkit-justify-content: flex-end;
 	        justify-content: flex-end;
 	width: calc( (7 * var(--col)) + (6 * var(--gut)) );
-	margin-bottom: 130px;
+	margin-bottom: 80px;
 }
 .lander .text h1 {
 	margin-bottom: 25px;
@@ -143,7 +159,7 @@ a {
 }
 .section1 {
 	width: var(--width);
-	padding: 430px var(--out) 200px var(--out);
+	padding: 380px var(--out) 200px var(--out);
 	background-image: url('../img/IHS.png');
 	background-position: bottom center;
 	background-size: cover;
@@ -211,7 +227,7 @@ a {
 }
 .section3 {
 	width: var(--width);
-	padding: 200px var(--out);
+	padding: 150px var(--out) 100px var(--out);
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;

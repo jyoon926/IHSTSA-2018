@@ -44,7 +44,8 @@
 .header .ul a {
 	color: white;
 	padding: 5px;
-	font-size: 1.1em;
+	font-size: 1em;
+	font-weight: 100;
 }
 .header .ul a div {
 	height: 8px;
