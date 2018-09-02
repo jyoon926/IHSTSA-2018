@@ -1,6 +1,6 @@
  $(document).ready(function(){
 
-	//Parallax On Big Displays
+	/*/Parallax On Big Displays
 	if ( $(window).width() > 739) {
 		//var $navBar = $('.navBar');
 		var $win = $(window);
@@ -13,15 +13,15 @@
 		$win.on('scroll', function() {
 			var top1 = $win.scrollTop()/800;
 			var top2 = ($win.scrollTop() - 150);
-			var top3 = $win.scrollTop() + 50;		
-			var top4 = $win.scrollTop() - 20;		
+			var top3 = $win.scrollTop() + 50;
+			var top4 = $win.scrollTop() - 20;
 			$circles.css('opacity', (top1 * -1) + 1);
 			$circles.css('margin-bottom', (top2.toFixed(1) * -1) + 'px');
 			$circle1.css('margin-left', (top3.toFixed(1) * -1) + 'px');
 			$circle2.css('margin-left', (top4.toFixed(1)) + 'px');
 		});
 
-	}
+	}*/
 
 	//Smooth Scrolling Between Links
 	$("a").on('click', function(event) {
@@ -38,11 +38,13 @@
 
 	//Change header height on scroll
 	$(window).on("scroll", function () {
-		if ($(this).scrollTop() > 100) {
-	   	$(".header").css("background", "#070014");
+		if ($(this).scrollTop() > 50) {
+      $(".header").css("background", "#070014");
+	   	$(".header").css("height", "100px");
 		}
 		else {
 	   	$(".header").css("background", "rgba(0,0,0,0)");
+      $(".header").css("height", "150px");
 		}
 	});
 

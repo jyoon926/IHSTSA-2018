@@ -28,7 +28,7 @@ body {
 }
 h1 {
 	font-family: 'Gt Esti Display';
-	font-size: 3.375em;
+	font-size: 5em;
 	font-weight: 500;
 	line-height: 1.1;
 }
@@ -41,7 +41,7 @@ h2 {
 p {
 	font-family: 'Gt Esti Text';
 	font-size: 1.25em;
-	font-weight: 200;
+	font-weight: 400;
 	line-height: 1.8;
 }
 a {
@@ -49,7 +49,26 @@ a {
 	text-decoration: none;
 	list-style: none;
 	font-size: 1.25em;
-	font-weight: 200;
+	font-weight: 400;
+}
+@media screen and (max-width: 1300px) {
+	h1 {
+		font-size: 4em;
+	}
+}
+@media screen and (max-width: 1000px) {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2.5em;
+	}
+	p {
+		font-size: 1em;
+	}
+	a {
+		font-size: 1em;
+	}
 }
 .button {
 	color: white;
@@ -73,42 +92,36 @@ a {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	background: linear-gradient(to top, #070014, #110033);
+	background: #070014;
 	color: white;
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	-webkit-justify-content: space-between;
-	        justify-content: space-between;
-	-webkit-align-items: flex-end;
-	        align-items: flex-end;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
 }
 .lander .circles {
-	width: calc( (5 * var(--col)) + (4 * var(--gut)) );
-	margin-bottom: 150px;
-	height: calc(100vh - 200px);
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-ms-align-items: flex-end;
-	align-items: flex-end;
-	justify-content: flex-end;
-	margin-right: var(--gut);
+	width: 100%;
+	height: 100vh;
 	z-index: 1;
 	-webkit-transition-duration: 0s !important;
 	   -moz-transition-duration: 0s !important;
 	    -ms-transition-duration: 0s !important;
 	     -o-transition-duration: 0s !important;
 	        transition-duration: 0s !important;
+	position: absolute;
 }
 .lander .circles .circle1 {
-	width: calc( (5 * var(--col)) + (4 * var(--gut)) + 100px );
-	height: calc( (5 * var(--col)) + (4 * var(--gut)) + 100px);
+	width: 70vw;
+	height: 70vw;
 	background: linear-gradient(141deg, #070014, #5900FF);
-	-webkit-border-radius: calc( (((5 * var(--col)) + (4 * var(--gut))) + 100px) / 2 );
-	        border-radius: calc( (((5 * var(--col)) + (4 * var(--gut))) + 100px) / 2 );
+	-webkit-border-radius: 40vw;
+	        border-radius: 40vw;
 	position: absolute;
-	margin-left: -50px;
+	top: -30vw;
+	left: -20vw;
 	-webkit-transition-duration: 0s !important;
 	   -moz-transition-duration: 0s !important;
 	    -ms-transition-duration: 0s !important;
@@ -116,14 +129,29 @@ a {
 	        transition-duration: 0s !important;
 }
 .lander .circles .circle2 {
-	width: calc(var(--col) * 2);
-	height: calc(var(--col) * 2);
+	width: 20vw;
+	height: 20vw;
 	background: linear-gradient(to top right, #CB1F1F, #FFDB4A);
-	-webkit-border-radius: var(--col);
-	        border-radius: var(--col);
+	-webkit-border-radius: 10vw;
+	        border-radius: 10vw;
 	position: absolute;
-	margin-left: -20px;
-	margin-top: 50px;
+	top: 60vh;
+	right: -11vw;
+	-webkit-transition-duration: 0s !important;
+	   -moz-transition-duration: 0s !important;
+	    -ms-transition-duration: 0s !important;
+	     -o-transition-duration: 0s !important;
+	        transition-duration: 0s !important;
+}
+.lander .circles .circle3 {
+		width: 50vw;
+		height: 50vw;
+	background: linear-gradient(255deg, #CB1F1F, #5900FF);
+	-webkit-border-radius: 25vw;
+	        border-radius: 25vw;
+	position: absolute;
+	top: -35vw;
+	right: -15vw;
 	-webkit-transition-duration: 0s !important;
 	   -moz-transition-duration: 0s !important;
 	    -ms-transition-duration: 0s !important;
@@ -137,16 +165,18 @@ a {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: flex-end;
-	        justify-content: flex-end;
-	width: calc( (7 * var(--col)) + (6 * var(--gut)) );
-	margin-bottom: 80px;
+	-ms-align-items: center;
+	align-items: center;
+	width: var(--width);
+	z-index: 2;
+	text-align: center;
 }
 .lander .text h1 {
 	margin-bottom: 25px;
 }
 .lander .text p {
 	margin-bottom: 35px;
+	width: calc( (7 * var(--col)) + (6 * var(--gut)) );
 }
 .lander .text a {
 	width: 175px;
