@@ -43,7 +43,6 @@
 			$circle4.css('transform', 'translateY(' + top4.toFixed(1) + 'px)');
 			$circle5.css('transform', 'translateY(' + top5.toFixed(1) + 'px)');
 		});*/
->>>>>>> parent of 4237d1e... Small changes
 
 	}*/
 
