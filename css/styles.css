@@ -112,16 +112,6 @@ a {
 	     -o-transition-duration: 0s !important;
 	        transition-duration: 0s !important;
 	position: absolute;
-	width: calc( (5 * var(--col)) + (4 * var(--gut)) );
-	margin-bottom: 150px;
-	height: calc(100vh - 200px);
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-ms-align-items: flex-end;
-	align-items: flex-end;
-	justify-content: flex-end;
-	margin-right: var(--gut);
 }
 .lander .circles .circle1 {
 	width: 70vw;
@@ -137,7 +127,6 @@ a {
 	    -ms-transition-duration: 0s !important;
 	     -o-transition-duration: 0s !important;
 	        transition-duration: 0s !important;
-	margin-left: -50px;
 }
 .lander .circles .circle2 {
 	width: 20vw;
@@ -168,8 +157,6 @@ a {
 	    -ms-transition-duration: 0s !important;
 	     -o-transition-duration: 0s !important;
 	        transition-duration: 0s !important;
-	margin-left: -20px;
-	margin-top: 50px;
 }
 .lander .text {
 	display: -webkit-flex;
@@ -183,10 +170,6 @@ a {
 	width: var(--width);
 	z-index: 2;
 	text-align: center;
-	-webkit-justify-content: flex-end;
-	        justify-content: flex-end;
-	width: calc( (7 * var(--col)) + (6 * var(--gut)) );
-	margin-bottom: 130px;
 }
 .lander .text h1 {
 	margin-bottom: 25px;
@@ -206,7 +189,7 @@ a {
 }
 .section1 {
 	width: var(--width);
-	padding: 430px var(--out) 200px var(--out);
+	padding: 380px var(--out) 200px var(--out);
 	background-image: url('../img/IHS.png');
 	background-position: bottom center;
 	background-size: cover;
@@ -274,7 +257,7 @@ a {
 }
 .section3 {
 	width: var(--width);
-	padding: 200px var(--out);
+	padding: 150px var(--out) 100px var(--out);
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
